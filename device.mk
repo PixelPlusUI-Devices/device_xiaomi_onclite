@@ -316,6 +316,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
+# Overlays
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
