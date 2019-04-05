@@ -221,3 +221,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.backup.ntpServer=0.pool.ntp.org \
     ro.emmc_size=16GB \
     ro.cutoff_voltage_mv=3400
+
+# UI
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.use_fifo_ui=1
