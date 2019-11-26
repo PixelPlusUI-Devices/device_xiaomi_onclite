@@ -410,3 +410,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # Wallpapers
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
+
+# Recorder
+PRODUCT_PACKAGES += \
+    Recorder
