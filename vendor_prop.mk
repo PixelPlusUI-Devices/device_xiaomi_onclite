@@ -98,6 +98,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sdm.debug.disable_skip_validate=1 \
     vendor.display.disable_skip_validate=1 \
     vendor.display.enable_default_color_mode=0 \
+    vendor.display.enable_optimize_refresh=1 \
     vendor.display.svi.config=1 \
     vendor.display.svi.config_path=/system/etc/display/SVIConfig.xml \
     vendor.gralloc.enable_fb_ubwc=1
