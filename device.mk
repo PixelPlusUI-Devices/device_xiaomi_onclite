@@ -150,9 +150,9 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     vendor.display.config@1.1
 
-# Doze mode
+# XiaomiParts
 PRODUCT_PACKAGES += \
-    XiaomiDoze
+    XiaomiParts
 
 # DRM
 PRODUCT_PACKAGES += \
