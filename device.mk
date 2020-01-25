@@ -124,7 +124,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     libgui_vendor \
-    Snap
+    Gcam
 
 # Configstore
 PRODUCT_PACKAGES += \
