@@ -15,8 +15,9 @@ $(call inherit-product, device/xiaomi/onclite/device.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Inherit some common PixelExperience stuff.
+# Inherit some common EvolutionX stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+CUSTOM_BUILD_TYPE := BETA
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_GAPPS_ARCH := arm64
 
