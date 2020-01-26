@@ -453,4 +453,7 @@
        <item>22</item>
    </integer-array>
 
+    <!-- Whether we have a multi coloured battery LED or not -->
+    <bool name="config_multiColorBatteryLed">false</bool>
+
 </resources>
