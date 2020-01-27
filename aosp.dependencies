@@ -1,11 +1,11 @@
 [
  {
-   "repository": "android_kernel_xiaomi_onclite",
+   "repository": "kernel_xiaomi_onclite",
    "target_path": "kernel/xiaomi/onclite",
    "branch": "Q"
  },
  {
-   "repository": "android_vendor_xiaomi_onclite",
+   "repository": "vendor_xiaomi_onclite",
    "target_path": "vendor/xiaomi/onclite",
    "branch": "10.x"
  },
