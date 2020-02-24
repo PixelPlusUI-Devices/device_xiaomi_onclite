@@ -29,7 +29,8 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=290
+    ro.sf.lcd_density=290 \
+    ro.miui.notch=1
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1520
@@ -414,3 +415,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # Recorder
 PRODUCT_PACKAGES += \
     Recorder
+
+# NotchOverlay
+PRODUCT_PACKAGES += \
+    NotchOverlay
