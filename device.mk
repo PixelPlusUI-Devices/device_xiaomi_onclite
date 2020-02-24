@@ -408,7 +408,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     NexusLauncherRelease
 
 # Wallpapers
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
 
 # Recorder
