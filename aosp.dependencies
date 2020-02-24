@@ -22,7 +22,7 @@
    "remote": "pixel-gitlab"
  },
  {
-   "repository": "packages_apps_NotchOverlay",
+   "repository": "NotchOverlay",
    "target_path": "packages/apps/NotchOverlay",
    "branch": "master",
    "remote": "mylove90"
