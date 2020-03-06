@@ -28,7 +28,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 7
 PRODUCT_MANUFACTURER := Xiaomi
 
-BUILD_FINGERPRINT := "google/coral/coral:10/QQ1B.200205.002/6084387:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:10/QQ2A.200305.003/6156912:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="onc" \
