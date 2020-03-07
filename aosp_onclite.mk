@@ -28,6 +28,10 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 7
 PRODUCT_MANUFACTURER := Xiaomi
 
+# PixelPlusUI Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.pixelplusui.maintainer=KostyaJRZ
+
 BUILD_FINGERPRINT := "google/coral/coral:10/QQ2A.200305.003/6156912:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
