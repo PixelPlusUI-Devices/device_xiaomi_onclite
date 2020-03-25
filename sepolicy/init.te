@@ -1,1 +1,3 @@
 allow init proc_boot_reason:file r_file_perms;
+allow init sysfs:file write;
+allow init tmpfs:lnk_file create;
