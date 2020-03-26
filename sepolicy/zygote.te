@@ -1,0 +1,2 @@
+allow zygote zygote:capability { kall } ;
+allow zygote zygote:capability { kill } ;
