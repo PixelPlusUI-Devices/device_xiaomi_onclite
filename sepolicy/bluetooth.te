@@ -1,0 +1,3 @@
+allow bluetooth hal_perf_default:binder { call } ;
+allow bluetooth vendor_file:file { execute } ;
+allow bluetooth vendor_file:file { read } ;

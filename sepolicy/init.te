@@ -3,3 +3,4 @@ allow init sysfs:file { write } ;
 allow init tmpfs:lnk_file { create } ;
 allow init firmware_file:filesystem { getattr } ;
 allow init system_file:file { execute_no_trans } ;
+allow init hal_perf_default:binder { call } ;
