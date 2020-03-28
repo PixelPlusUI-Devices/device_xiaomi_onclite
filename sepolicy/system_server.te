@@ -10,4 +10,6 @@ allow system_server sysfs:file { open } ;
 allow system_server default_android_hwservice:hwservice_manager { find } ;
 allow system_server init:binder { call } ;
 allow system_server sysfs:file { getattr } ;
+allow system_server default_android_service:service_manager { add } ;
+allow system_server default_android_service:service_manager { find } ;
 

@@ -6,4 +6,4 @@ allow init system_file:file { execute_no_trans } ;
 allow init hal_perf_default:binder { call } ;
 allow init vendor_file:file { execute } ;
 allow init vendor_file:file { execute_no_trans } ;
-
+allow init vendor_toolbox_exec:file { execute_no_trans } ;
