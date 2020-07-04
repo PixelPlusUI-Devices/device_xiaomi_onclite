@@ -16,3 +16,6 @@ genfscon debugfs /rmt_storage	u:object_r:debugfs_rmt:s0
 
 # Touchscreen
 genfscon proc /touchpanel	u:object_r:proc_touchpanel:s0
+
+# USB force fastcharge
+genfscon sysfs /sys/kernel/fast_charge/force_fast_charge       u:object_r:sysfs_fcharge:s0
