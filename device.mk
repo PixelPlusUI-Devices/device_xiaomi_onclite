@@ -393,7 +393,6 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 
-<<<<<<< HEAD
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package
@@ -403,12 +402,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
     $(LOCAL_PATH)/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml
-=======
+
 #VioletParts init
 PRODUCT_PACKAGES += \
     init.violetparts.sh \
     init.violetparts.rc
->>>>>>> 55f0403c... violet: Import VioletParts
 
 # Wifi
 PRODUCT_PACKAGES += \
