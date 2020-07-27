@@ -5,6 +5,7 @@ persist.sys.usb.config=mtp,adb
 ro.adb.secure=0
 
 # Audio
+persist.audio.dirac.speaker=true
 persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicerec=false
@@ -32,6 +33,15 @@ vendor.qcom.bluetooth.soc=pronto
 # Display post-processing
 ro.vendor.display.cabl=0
 ro.vendor.display.sensortype=2
+
+# Dirac algo tsx 9/12
+persist.dirac.acs.controller=qem
+persist.dirac.acs.storeSettings=1
+persist.dirac.acs.ignore_error=1
+
+# Dirac headset effect
+ro.audio.soundfx.dirac=true
+persist.audio.dirac.speaker=true
 
 # DRM
 drm.service.enabled=true
