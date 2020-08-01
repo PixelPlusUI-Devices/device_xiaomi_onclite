@@ -11,8 +11,3 @@ type sysfs_fingerprint, sysfs_type, fs_type;
 
 # Hall Switch
 type hall_dev, sysfs_type, fs_type;
-
-# XiaomiParts
-type kcal_dev, sysfs_type, fs_type;
-type sysfs_fpsinfo, sysfs_type, fs_type;
-

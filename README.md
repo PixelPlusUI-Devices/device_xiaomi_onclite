@@ -1,4 +1,4 @@
-Copyright (C) 2020 The MoKee Open Source Project
+Copyright (C) 2019 The PixelPlusUI Project
  
   Device configuration for Xiaomi Redmi 7
  =========================================
@@ -28,12 +28,4 @@ budget smartphone from Xiaomi.
  
   ## Device picture
  
-  ![Xiaomi Redmi 7 ](https://i.imgur.com/PjaQrqr.png "Xiaomi Redmi 7")
-
-
- 
-                
-
- 
- 
-  
+  ![Xiaomi Redmi 7 ](https://www.91-cdn.com/pricebaba-images/images/product/mobile/66422/xiaomi-redmi-7-raw-330605.jpg "Xiaomi Redmi 7")

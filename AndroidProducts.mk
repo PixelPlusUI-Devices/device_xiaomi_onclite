@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/mokee_onclite.mk
+    $(LOCAL_DIR)/aosp_onclite.mk
 
  COMMON_LUNCH_CHOICES := \
-    mokee_onclite-user \
-    mokee_onclite-userdebug \
-    mokee_onclite-eng
+    aosp_onclite-user \
+    aosp_onclite-userdebug \
+    aosp_onclite-eng

@@ -25,11 +25,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-mokee
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-mokee/mokee-sdk \
     $(LOCAL_PATH)/overlay/packages/apps/Snap
 
 # Screen density
@@ -248,10 +246,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.msm8953
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.mokee.livedisplay@2.0-service-sdm
-
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -401,10 +395,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service \
     thermal.msm8953
-	
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.mokee.trust@1.0-service
 
 # USB HAL
 PRODUCT_PACKAGES += \
@@ -453,10 +443,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-# XiaomiParts
-PRODUCT_PACKAGES += \
-    XiaomiParts
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

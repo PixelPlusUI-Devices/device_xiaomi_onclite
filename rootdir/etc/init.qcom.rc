@@ -91,12 +91,6 @@ on early-boot
     chown system system /mnt/vendor/persist/sensors/registry/config
     chmod 0664 /mnt/vendor/persist/sensors/sensors_settings
 
-    # XiaomiParts
-    chown system system /sys/module/hall/parameters/hall_toggle
-    chmod 0660 /sys/module/hall/parameters/hall_toggle
-    chown system system /sys/devices/virtual/thermal/thermal_message/sconfig
-    chmod 0660 /sys/devices/virtual/thermal/thermal_message/sconfig
-
     # Kcal permissions
     chown root system /sys/devices/platform/kcal_ctrl.0/kcal
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal
