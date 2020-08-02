@@ -195,7 +195,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.enable_vds=1 \
     persist.hwc.mdpcomp.enable=true \
     vendor.video.disable.ubwc=1 \
-    sys.display-size=1920x1080
+    sys.display-size=3840x2160
 
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
