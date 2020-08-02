@@ -47,3 +47,6 @@ allow vendor_toolbox {
     persist_time_file
     sensors_persist_file
 }:file { r_file_perms setattr };
+
+allow vendor_toolbox persist_hvdcp_file:file { getattr };
+allow vendor_toolbox vendor_toolbox:capability { dac_override };

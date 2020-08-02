@@ -1,6 +1,3 @@
-# Hall Switch
-/sys/module/hall/parameters(/.*)?               u:object_r:hall_dev:s0
-
 # IR
 /dev/spidev6\.1  u:object_r:ir_dev_file:s0
 
