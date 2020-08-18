@@ -18,11 +18,8 @@ $(call inherit-product, vendor/xiaomi/onclite/onclite-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -240,10 +237,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.onclite
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
-
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml::$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -360,10 +353,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service \
     thermal.msm8953
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # USB HAL
 PRODUCT_PACKAGES += \

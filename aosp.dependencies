@@ -1,0 +1,13 @@
+[
+ {
+   "repository": "kernel_xiaomi_onclite",
+   "target_path": "kernel/xiaomi/onclite",
+   "branch": "ten",
+   "remote": "AlpacaGang"
+ },
+ {
+   "repository": "vendor_xiaomi_onclite",
+   "target_path": "vendor/xiaomi/onclite",
+   "branch": "ten"
+ }
+]
