@@ -1,14 +1,15 @@
 [
  {
-   "repository": "kernel_xiaomi_onclite",
-   "target_path": "kernel/xiaomi/onclite",
-   "branch": "ten",
-   "remote": "AlpacaGang"
+   "remote":       "github",
+   "repository":   "AlpacaGang/kernel_xiaomi_onclite",
+   "target_path":  "kernel/xiaomi/onclite",
+   "revision":     "ten"
  },
  {
-   "repository": "vendor_xiaomi_onclite",
-   "target_path": "vendor/xiaomi/onclite",
-   "branch": "ten"
+   "remote":       "github",
+   "repository":   "PixelPlusUI-Devices/vendor_xiaomi_onclite",
+   "target_path":  "vendor/xiaomi/onclite",
+   "revision":     "ten"
  },
  {
    "remote":       "github",
