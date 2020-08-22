@@ -20,6 +20,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
+PPUI_MAINTAINER := KostyaJRZ
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_onclite
@@ -36,7 +37,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="onc"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# PixelPlusUI Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-      ro.pixelplusui.maintainer=KostyaJRZ
