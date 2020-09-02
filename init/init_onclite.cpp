@@ -20,6 +20,7 @@
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
+#include <sys/sysinfo.h>
 #include "property_service.h"
 #include "vendor_init.h"
 
@@ -44,6 +45,29 @@ void load_props(const std::string &device, const std::string &model) {
     }
 }
 
+void set_dalvik_properties() {
+    struct sysinfo sys;
+    sysinfo(&sys);
+
+    if (sys.totalram > 3072ull * 1024 * 1024) {
+        // Set for 4GB RAM
+        property_set("dalvik.vm.heapstartsize", "8m");
+        property_set("dalvik.vm.heapgrowthlimit", "192m");
+        property_set("dalvik.vm.heapsize", "512m");
+        property_set("dalvik.vm.heaptargetutilization", "0.6");
+        property_set("dalvik.vm.heapmaxfree", "16m");
+        property_set("dalvik.vm.heapminfree", "8m");
+    } else {
+        // Set for 2/3GB RAM
+        property_set("dalvik.vm.heapstartsize", "8m");
+        property_set("dalvik.vm.heapgrowthlimit", "192m");
+        property_set("dalvik.vm.heapsize", "512m");
+        property_set("dalvik.vm.heaptargetutilization", "0.75");
+        property_set("dalvik.vm.heapmaxfree", "8m");
+        property_set("dalvik.vm.heapminfree", "512k");
+    }
+}
+
 void vendor_load_properties() {
     std::string boot_cert = android::base::GetProperty("ro.boot.product.cert", "");
 
@@ -51,4 +75,6 @@ void vendor_load_properties() {
         load_props("onclite", "Redmi 7");
     else
         load_props("onc", "Redmi Y3");
+
+    set_dalvik_properties();
 }
