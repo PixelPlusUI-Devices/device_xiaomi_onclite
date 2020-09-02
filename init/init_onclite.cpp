@@ -71,7 +71,8 @@ void set_dalvik_properties() {
 void vendor_load_properties() {
     std::string boot_cert = android::base::GetProperty("ro.boot.product.cert", "");
 
-    if (boot_cert == "M1810F6LG" || boot_cert == "M1810F6LH" || boot_cert == "M1810F6LI")
+    if (boot_cert == "M1810F6LG" || boot_cert == "M1810F6LH" || boot_cert == "M1810F6LI"
+            || boot_cert == "M1810F6LE" || boot_cert == "M1810F6LT" || boot_cert == "M1810F6LC")
         load_props("onclite", "Redmi 7");
     else
         load_props("onc", "Redmi Y3");
