@@ -27,3 +27,4 @@ type proc_touchpanel, fs_type, sysfs_type, proc_type;
 # VioletParts
 type sysfs_fcharge, sysfs_type, fs_type;
 type sysfs_fastcharge, sysfs_type, fs_type;
+type vibrator_dev, sysfs_type, fs_type;
