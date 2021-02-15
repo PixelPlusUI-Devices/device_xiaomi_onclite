@@ -16,6 +16,9 @@ $(call inherit-product, device/xiaomi/onclite/device.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_GAPPS_ARCH := arm64
+CUSTOM_BUILD_TYPE := OFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
+PPUI_MAINTAINER := KostyaJRZ
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_onclite
