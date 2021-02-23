@@ -30,6 +30,7 @@ import com.xiaomi.parts.DiracUtils;
 import com.xiaomi.parts.R;
 
 import com.xiaomi.parts.kcal.Utils;
+import com.xiaomi.parts.preferences.VibratorStrengthPreference;
 
 import java.io.IOException;
 import java.util.List;
@@ -125,8 +126,7 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
 
         FileUtils.setValue(DeviceSettings.USB_FASTCHARGE_PATH, Settings.Secure.getInt(context.getContentResolver(),
                 DeviceSettings.PREF_USB_FASTCHARGE, 0));
-        FileUtils.setValue(DeviceSettings.VIBRATION_STRENGTH_PATH, Settings.Secure.getInt(
-                context.getContentResolver(), DeviceSettings.PREF_VIBRATION_STRENGTH, 80) / 100.0 * (DeviceSettings.MAX_VIBRATION - DeviceSettings.MIN_VIBRATION) + DeviceSettings.MIN_VIBRATION);
+        VibratorStrengthPreference.restore(context);
 	// Dirac
         context.startService(new Intent(context, DiracService.class));
     }
