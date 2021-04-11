@@ -144,7 +144,7 @@ PRODUCT_COPY_FILES += \
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
-    VioletParts
+    OncliteParts
 
 # Display
 PRODUCT_PACKAGES += \
@@ -403,10 +403,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml
 
-#VioletParts init
+# OncliteParts init
 PRODUCT_PACKAGES += \
-    init.violetparts.sh \
-    init.violetparts.rc
+    init.oncliteparts.sh \
+    init.oncliteparts.rc
 
 # Wifi
 PRODUCT_PACKAGES += \

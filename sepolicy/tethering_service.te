@@ -1,0 +1,1 @@
+allow tethering_service tethering_service:service_manager { find };

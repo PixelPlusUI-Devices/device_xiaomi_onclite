@@ -24,7 +24,7 @@ type debugfs_rmt, debugfs_type, fs_type;
 # Touchscreen
 type proc_touchpanel, fs_type, sysfs_type, proc_type;
 
-# VioletParts
+# OncliteParts
 type sysfs_fcharge, sysfs_type, fs_type;
 type sysfs_fastcharge, sysfs_type, fs_type;
 type vibrator_dev, sysfs_type, fs_type;
