@@ -46,7 +46,7 @@ vendor.vidc.dec.downscalar_width=1920
 vendor.vidc.enc.disable_bframes=1
 sys.display-size=3840x2160
 
-# QC framework value-adds
+# Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
 # Radio
